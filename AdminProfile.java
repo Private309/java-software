@@ -68,7 +68,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jButton1 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -82,8 +82,6 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jButton6 = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
@@ -97,7 +95,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Admin Profile", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 24))); // NOI18N
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -208,7 +206,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         jTextField4.setText("jTextField4");
 
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select City", "Chandigarh", "Delhi", "Mumbai", "Bangalore", "Shimla", "Mandi" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select City", "Chandigarh", "Delhi", "Mumbai", "Bangalore", "Shimla", "Mandi" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -271,7 +269,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
                     .addComponent(jLabel12))
                 .addGap(31, 31, 31)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(33, 33, 33))
         );
@@ -412,7 +410,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1366, 600));
 
-        jPanel2.setBackground(new java.awt.Color(51, 102, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 153));
 
         jButton6.setText("Logout");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -420,13 +418,6 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
                 jButton6ActionPerformed(evt);
             }
         });
-
-        jLabel13.setFont(new java.awt.Font("Franklin Gothic Demi", 0, 40)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Domino's");
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Dominos/official logo.png"))); // NOI18N
-        jLabel14.setText("jLabel10");
 
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
@@ -441,11 +432,7 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
-                .addGap(273, 273, 273)
+                .addGap(544, 544, 544)
                 .addComponent(jLabel19)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel20)
@@ -456,27 +443,21 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton6)
-                                .addGap(1, 1, 1))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel19)
-                                    .addComponent(jLabel20))
-                                .addComponent(jLabel13)))
-                        .addGap(17, 17, 17))))
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jButton6)
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel20))
+                        .addGap(39, 39, 39))))
         );
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 90));
 
-        jPanel7.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel7.setBackground(new java.awt.Color(0, 102, 153));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -757,8 +738,6 @@ public class AdminProfile extends javax.swing.JFrame implements Runnable {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
